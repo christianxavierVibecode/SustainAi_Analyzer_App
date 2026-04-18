@@ -159,7 +159,7 @@ AI menerima kombinasi gambar + prompt tersembunyi tersebut, sehingga hasil yang 
 
 4. Respone yang diberikan oleh model AI akan berupa data json seperti ini yang kemudian di parsing di sisi frontend :
 
-````markdown
+```markdown
 ```javascript
 {
   "score": 75,
@@ -187,6 +187,8 @@ AI menerima kombinasi gambar + prompt tersembunyi tersebut, sehingga hasil yang 
   ]
 }
 ```
+````
+
 ````
 
 ---
@@ -281,3 +283,4 @@ This project is open-source and available under the MIT License.
 ## 👨‍💻 Author
 
 Built with passion for modern web technology and AI innovation.
+````
