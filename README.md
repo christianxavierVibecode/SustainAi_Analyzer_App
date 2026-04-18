@@ -1,7 +1,6 @@
 <img src="https://drive.google.com/uc?export=view&id=1N45Iu5HqLyxPTX518uwMcvUVoOwdjoEf" 
      alt="Halaman Thumbnail" 
-     width="500" 
-     style="border: 5px solid #1AFF5F; border-radius: 10px;">
+     width="400">
 
 # 🌿 Analyzer App – AI Image Analyzer
 
@@ -39,32 +38,56 @@ Berikut adalah gambaran tampilan dari Analyzer App:
 
 1. Bagian Utama (Hero Section)
    Menampilkan visual utama dan ajakan bertindak (call to action) bagi pengguna untuk memulai analisis.
+
    ![Halaman Hero](https://drive.google.com/uc?export=view&id=1BlyD4DqK4tT5WYpxFJcgli6bMYtCA_2l)
+
+---
 
 2. Visi Kami (Our Vision Section)
    Menjelaskan tujuan dibalik pembuatan aplikasi ini dalam membantu kehidupan sehari-hari melalui AI.
+
    ![Halaman Our Vision](https://drive.google.com/uc?export=view&id=1MGXHQscQQoIBc2lfPvfia-zwYu58KclV)
+
+---
 
 3. Kategori Layanan Analisis
    Aplikasi ini memiliki tiga fitur utama yang dapat dipilih pengguna:
    📄 Analisis CV, 🌱 Hama Tanaman dan 🗑️ Klasifikasi Sampah
+
    ![Halaman Kategori](https://drive.google.com/uc?export=view&id=1k7OfqVMzRMiZrogK4egvc84kT9K6FqbG)
+
+---
 
 4. Halaman Analisis CV (AI-Based CV Checker)
    Tampilan Halaman input :
-   ![Halaman AI-Based CV Checker - input](https://drive.google.com/uc?export=view&id=13e8fMu8-rY6BMhMpSn5CGZi9xCquO7_X)
-   Tampilan Halaman output :
-   ![Halaman AI-Based CV Checker - output](https://drive.google.com/uc?export=view&id=1nRShZCp0jfklJuryEIHhcp_xlvrKFStp)
+   <table style="width: 100%;">
+     <tr>
+       <td style="width: 50%; text-align: center;">
+         <img src="https://drive.google.com/uc?export=view&id=13e8fMu8-rY6BMhMpSn5CGZi9xCquO7_X" style="border: 2px solid #ddd;">
+         <p><i>Halaman AI-Based CV Checker - input</i></p>
+       </td>
+       <td style="width: 50%; text-align: center;">
+         <img src="https://drive.google.com/uc?export=view&id=1nRShZCp0jfklJuryEIHhcp_xlvrKFStp" style="border: 2px solid #ddd;">
+         <p><i>Halaman AI-Based CV Checker - output</i></p>
+       </td>
+     </tr>
+   </table>
+
+---
 
 5. Halaman Analisis Hama Tanaman (Plant Disease Detection)
    Tampilan Halaman input :
    ![Halaman Plant Disease Detection - input](https://drive.google.com/uc?export=view&id=1ErznnHwod1oxFdmoqrSc6eTeR14eKN11)
+
    Tampilan Halaman output :
    ![Halaman Plant Disease Detection - output](https://drive.google.com/uc?export=view&id=115em_dVD9itSo-NEv86K7IO5eBglLQhm)
+
+---
 
 6. Halaman Klasifikasi Sampah (Waste Classification System)
    Tampilan Halaman input :
    ![Halaman Waste Classification System - input](https://drive.google.com/uc?export=view&id=13RqDYPta_3BLf-4AOllb0YyyB4EaXKmb)
+
    Tampilan Halaman output :
    ![Halaman Waste Classification System - output](https://drive.google.com/uc?export=view&id=1D2iD5edZSz0HWHR6mFaP8lOq-iG2Tehm)
 
