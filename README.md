@@ -159,8 +159,8 @@ AI menerima kombinasi gambar + prompt tersembunyi tersebut, sehingga hasil yang 
 
 4. Respone yang diberikan oleh model AI akan berupa data json seperti ini yang kemudian di parsing di sisi frontend :
 
-```markdown
-```javascript
+````markdown
+```js
 {
   "score": 75,
   "score_reason": "CV memiliki struktur yang rapi dan pengalaman spesifik di industri hospitality (Ayana Komodo). Namun, detail teknis untuk bidang IT masih bisa diperdalam lagi.",
