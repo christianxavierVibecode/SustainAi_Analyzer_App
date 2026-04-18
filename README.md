@@ -1,6 +1,15 @@
-<img src="https://drive.google.com/uc?export=view&id=1N45Iu5HqLyxPTX518uwMcvUVoOwdjoEf" 
-     alt="Halaman Thumbnail" 
-     width="400">
+<table style="width: 100%;" border="0">
+    <tr>
+    <td style="width: 50%; text-align: center;>
+        <img src="https://drive.google.com/uc?export=view&id=1N45Iu5HqLyxPTX518uwMcvUVoOwdjoEf">
+    </td>
+    <td style="width: 50%; text-align: center;>
+        <img src="https://drive.google.com/uc?export=view&id=1WHsLMK8YbaX8wtavRJ7oXZDNJ_U64vfY">
+    </td>
+    </tr>
+</table>
+
+---
 
 # 🌿 Analyzer App – AI Image Analyzer
 
@@ -62,11 +71,11 @@ Berikut adalah gambaran tampilan dari Analyzer App:
 
    <table style="width: 100%;">
      <tr>
-       <td style="width: 50%; text-align: center; font-size: 50%;">
+       <td style="width: 50%; text-align: center;>
          <img src="https://drive.google.com/uc?export=view&id=13e8fMu8-rY6BMhMpSn5CGZi9xCquO7_X">
          <p><i>Halaman AI-Based CV Checker - input</i></p>
        </td>
-       <td style="width: 50%; text-align: center; font-size: 50%;">
+       <td style="width: 50%; text-align: center;>
          <img src="https://drive.google.com/uc?export=view&id=1nRShZCp0jfklJuryEIHhcp_xlvrKFStp">
          <p><i>Halaman AI-Based CV Checker - output</i></p>
        </td>
@@ -76,20 +85,36 @@ Berikut adalah gambaran tampilan dari Analyzer App:
 ---
 
 5. Halaman Analisis Hama Tanaman (Plant Disease Detection)
-   Tampilan Halaman input :
-   ![Halaman Plant Disease Detection - input](https://drive.google.com/uc?export=view&id=1ErznnHwod1oxFdmoqrSc6eTeR14eKN11)
 
-   Tampilan Halaman output :
-   ![Halaman Plant Disease Detection - output](https://drive.google.com/uc?export=view&id=115em_dVD9itSo-NEv86K7IO5eBglLQhm)
+   <table style="width: 100%;">
+     <tr>
+       <td style="width: 50%; text-align: center;>
+         <img src="https://drive.google.com/uc?export=view&id=1ErznnHwod1oxFdmoqrSc6eTeR14eKN11">
+         <p><i>Halaman Plant Disease Detection - input</i></p>
+       </td>
+       <td style="width: 50%; text-align: center;>
+         <img src="https://drive.google.com/uc?export=view&id=115em_dVD9itSo-NEv86K7IO5eBglLQhm">
+         <p><i>Halaman Plant Disease Detection - output</i></p>
+       </td>
+     </tr>
+   </table>
 
 ---
 
 6. Halaman Klasifikasi Sampah (Waste Classification System)
-   Tampilan Halaman input :
-   ![Halaman Waste Classification System - input](https://drive.google.com/uc?export=view&id=13RqDYPta_3BLf-4AOllb0YyyB4EaXKmb)
 
-   Tampilan Halaman output :
-   ![Halaman Waste Classification System - output](https://drive.google.com/uc?export=view&id=1D2iD5edZSz0HWHR6mFaP8lOq-iG2Tehm)
+   <table style="width: 100%;">
+     <tr>
+       <td style="width: 50%; text-align: center;>
+         <img src="https://drive.google.com/uc?export=view&id=13RqDYPta_3BLf-4AOllb0YyyB4EaXKmb">
+         <p><i>Halaman Waste Classification System - input</i></p>
+       </td>
+       <td style="width: 50%; text-align: center;>
+         <img src="https://drive.google.com/uc?export=view&id=1D2iD5edZSz0HWHR6mFaP8lOq-iG2Tehm">
+         <p><i>Halaman Waste Classification System - output</i></p>
+       </td>
+     </tr>
+   </table>
 
 ---
 
@@ -101,7 +126,7 @@ Aplikasi ini menggunakan alur pemrosesan data yang terintegrasi langsung dengan 
 
 1. gemini-3-flash: Menggunakan API Key dari Google AI Studio untuk memproses multimodal (teks dan gambar).
 
-```
+```Javascript
   const response = await fetch(
     `https://generativelanguage.googleapis.com/v1beta/models/gemini-3-flash-preview:generateContent?key=${process.env.GEMINI_API_KEY_CV_ANALYZER}`;
     ....
@@ -109,7 +134,7 @@ Aplikasi ini menggunakan alur pemrosesan data yang terintegrasi langsung dengan 
 
 2. Backend Processing: Gambar tidak diproses di sisi klien, melainkan dikirim ke endpoint API backend untuk menjaga keamanan API Key.
 
-```
+```Javascript
 try {
     const res = await fetch("/api/analyze-cv", {
     method: "POST",
@@ -125,7 +150,7 @@ Aplikasi menggunakan metode Hardcoded Prompt Injection pada sisi server. Cara ke
 2. Frontend mengirimkan gambar tersebut ke Backend API.
 3. Di sisi Backend, sistem menyematkan instruksi spesifik (hardcoded prompt) sebelum dikirim ke AI, contoh kodenya :
 
-```
+```Javascript
  const PROMPT_EN = `
   You are a professional CV analyst AI.
 
@@ -193,8 +218,7 @@ AI menerima kombinasi gambar + prompt tersembunyi tersebut, sehingga hasil yang 
 
 4. Respone yang diberikan oleh model AI akan berupa data json seperti ini yang kemudian di parsing di sisi frontend :
 
-````markdown
-```js
+```Json
 {
   "score": 75,
   "score_reason": "CV memiliki struktur yang rapi dan pengalaman spesifik di industri hospitality (Ayana Komodo). Namun, detail teknis untuk bidang IT masih bisa diperdalam lagi.",
@@ -221,7 +245,6 @@ AI menerima kombinasi gambar + prompt tersembunyi tersebut, sehingga hasil yang 
   ]
 }
 ```
-````
 
 ---
 
