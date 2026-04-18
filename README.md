@@ -1,3 +1,5 @@
+![Halaman Thumbnail](https://drive.google.com/uc?export=view&id=1N45Iu5HqLyxPTX518uwMcvUVoOwdjoEf)
+
 # 🌿 Analyzer App – AI Image Analyzer
 
 _Platform Analisis Gambar Cerdas berbasis Teknologi Web Modern_
@@ -34,28 +36,34 @@ Berikut adalah gambaran tampilan dari Analyzer App:
 
 1. Bagian Utama (Hero Section)
    Menampilkan visual utama dan ajakan bertindak (call to action) bagi pengguna untuk memulai analisis.
-   ![Halaman Artikel 1](https://drive.google.com/uc?export=view&id=1iSJq4nIkkZi2oUic68F34kOmagoRWI0i)
+   ![Halaman Hero](https://drive.google.com/uc?export=view&id=1BlyD4DqK4tT5WYpxFJcgli6bMYtCA_2l)
 
 2. Visi Kami (Our Vision Section)
    Menjelaskan tujuan dibalik pembuatan aplikasi ini dalam membantu kehidupan sehari-hari melalui AI.
-   ![Halaman Artikel 1](https://drive.google.com/uc?export=view&id=1iSJq4nIkkZi2oUic68F34kOmagoRWI0i)
+   ![Halaman Our Vision](https://drive.google.com/uc?export=view&id=1MGXHQscQQoIBc2lfPvfia-zwYu58KclV)
 
 3. Kategori Layanan Analisis
    Aplikasi ini memiliki tiga fitur utama yang dapat dipilih pengguna:
    📄 Analisis CV, 🌱 Hama Tanaman dan 🗑️ Klasifikasi Sampah
-   ![Halaman Artikel 1](https://drive.google.com/uc?export=view&id=1iSJq4nIkkZi2oUic68F34kOmagoRWI0i)
+   ![Halaman Kategori](https://drive.google.com/uc?export=view&id=1k7OfqVMzRMiZrogK4egvc84kT9K6FqbG)
 
 4. Halaman Analisis CV (AI-Based CV Checker)
-   Sampel hasil ekstraksi data dari file CV atau resume menggunakan AI.
-   ![Halaman Artikel 1](https://drive.google.com/uc?export=view&id=1iSJq4nIkkZi2oUic68F34kOmagoRWI0i)
+   Tampilan Halaman input :
+   ![Halaman AI-Based CV Checker - input](https://drive.google.com/uc?export=view&id=13e8fMu8-rY6BMhMpSn5CGZi9xCquO7_X)
+   Tampilan Halaman output :
+   ![Halaman AI-Based CV Checker - output](https://drive.google.com/uc?export=view&id=1nRShZCp0jfklJuryEIHhcp_xlvrKFStp)
 
 5. Halaman Analisis Hama Tanaman (Plant Disease Detection)
-   Sampel deteksi penyakit atau hama pada daun tanaman beserta solusinya.
-   ![Halaman Artikel 1](https://drive.google.com/uc?export=view&id=1iSJq4nIkkZi2oUic68F34kOmagoRWI0i)
+   Tampilan Halaman input :
+   ![Halaman Plant Disease Detection - input](https://drive.google.com/uc?export=view&id=1ErznnHwod1oxFdmoqrSc6eTeR14eKN11)
+   Tampilan Halaman output :
+   ![Halaman Plant Disease Detection - output](https://drive.google.com/uc?export=view&id=115em_dVD9itSo-NEv86K7IO5eBglLQhm)
 
 6. Halaman Klasifikasi Sampah (Waste Classification System)
-   Sampel identifikasi jenis sampah (organik/anorganik) dan cara pengolahannya.
-   ![Halaman Artikel 1](https://drive.google.com/uc?export=view&id=1iSJq4nIkkZi2oUic68F34kOmagoRWI0i)
+   Tampilan Halaman input :
+   ![Halaman Waste Classification System - input](https://drive.google.com/uc?export=view&id=13RqDYPta_3BLf-4AOllb0YyyB4EaXKmb)
+   Tampilan Halaman output :
+   ![Halaman Waste Classification System - output](https://drive.google.com/uc?export=view&id=1D2iD5edZSz0HWHR6mFaP8lOq-iG2Tehm)
 
 ---
 
@@ -189,8 +197,6 @@ AI menerima kombinasi gambar + prompt tersembunyi tersebut, sehingga hasil yang 
 ```
 ````
 
-````
-
 ---
 
 ## 🛠 Tech Stack
@@ -244,33 +250,14 @@ GEMINI_API_KEY_PLANT_ANALYZER=YOUR_API_KEY
 
 ---
 
-## 📌 How It Works
+## 🤝 Support Me
 
-1. User uploads an image
-2. The image is previewed on the client
-3. The image is sent to the backend/API
-4. AI processes the image
-5. The analysis result is returned and displayed
+Kontribusi, saran, dan perbaikan sangat kami harapkan.
 
----
-
-## 🎯 Goals of This Project
-
-- Build a real-world AI integrated web app
-- Implement clean architecture with scalability
-- Practice modern frontend engineering patterns
-- Provide multilingual user experience
-
----
-
-## 🤝 Contributing
-
-Contributions, suggestions, and improvements are welcome.
-
-1. Fork this repository
-2. Create your feature branch
-3. Commit your changes
-4. Open a Pull Request
+1. Fork repositori ini
+2. Buat branch fitur Anda
+3. Commit perubahan Anda
+4. lalu buat Pull Request
 
 ---
 
@@ -283,4 +270,7 @@ This project is open-source and available under the MIT License.
 ## 👨‍💻 Author
 
 Built with passion for modern web technology and AI innovation.
-````
+
+```
+
+```
