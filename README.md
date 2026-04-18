@@ -59,15 +59,15 @@ Berikut adalah gambaran tampilan dari Analyzer App:
 ---
 
 4. Halaman Analisis CV (AI-Based CV Checker)
-   Tampilan Halaman input :
+
    <table style="width: 100%;">
      <tr>
-       <td style="width: 50%; text-align: center;">
-         <img src="https://drive.google.com/uc?export=view&id=13e8fMu8-rY6BMhMpSn5CGZi9xCquO7_X" style="border: 2px solid #ddd;">
+       <td style="width: 50%; text-align: center; font-size: 50%;">
+         <img src="https://drive.google.com/uc?export=view&id=13e8fMu8-rY6BMhMpSn5CGZi9xCquO7_X">
          <p><i>Halaman AI-Based CV Checker - input</i></p>
        </td>
-       <td style="width: 50%; text-align: center;">
-         <img src="https://drive.google.com/uc?export=view&id=1nRShZCp0jfklJuryEIHhcp_xlvrKFStp" style="border: 2px solid #ddd;">
+       <td style="width: 50%; text-align: center; font-size: 50%;">
+         <img src="https://drive.google.com/uc?export=view&id=1nRShZCp0jfklJuryEIHhcp_xlvrKFStp">
          <p><i>Halaman AI-Based CV Checker - output</i></p>
        </td>
      </tr>
