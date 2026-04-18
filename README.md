@@ -1,4 +1,4 @@
-<table style="width: 100%;" border="0">
+<!-- <table style="width: 100%;" border="0">
     <tr>
     <td style="width: 50%; text-align: center;>
         <img src="https://drive.google.com/uc?export=view&id=1N45Iu5HqLyxPTX518uwMcvUVoOwdjoEf">
@@ -7,7 +7,7 @@
         <img src="https://drive.google.com/uc?export=view&id=1WHsLMK8YbaX8wtavRJ7oXZDNJ_U64vfY">
     </td>
     </tr>
-</table>
+</table> -->
 
 ---
 
