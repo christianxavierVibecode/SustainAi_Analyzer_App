@@ -64,8 +64,10 @@ Berikut adalah gambaran tampilan dari Analyzer App:
 Aplikasi ini menggunakan alur pemrosesan data yang terintegrasi langsung dengan model bahasa besar (LLM). Berikut adalah detail teknisnya:
 
 🧠 Model & AI Engine
+
 1. gemini-3-flash: Menggunakan API Key dari Google AI Studio untuk memproses multimodal (teks dan gambar).
-```Javascript
+
+```
   const response = await fetch(
     `https://generativelanguage.googleapis.com/v1beta/models/gemini-3-flash-preview:generateContent?key=${process.env.GEMINI_API_KEY_CV_ANALYZER}`;
     ....
@@ -73,18 +75,117 @@ Aplikasi ini menggunakan alur pemrosesan data yang terintegrasi langsung dengan 
 
 2. Backend Processing: Gambar tidak diproses di sisi klien, melainkan dikirim ke endpoint API backend untuk menjaga keamanan API Key.
 
+```
+try {
+    const res = await fetch("/api/analyze-cv", {
+    method: "POST",
+    body: formData,
+    });
+    ...
+```
+
 🛠️ Teknik Prompt Engineering
 Aplikasi menggunakan metode Hardcoded Prompt Injection pada sisi server. Cara kerjanya:
 
-User memilih gambar (misal: Gambar Daun).
+1. User memilih gambar (misal: Gambar Daun).
+2. Frontend mengirimkan gambar tersebut ke Backend API.
+3. Di sisi Backend, sistem menyematkan instruksi spesifik (hardcoded prompt) sebelum dikirim ke AI, contoh kodenya :
 
-Frontend mengirimkan gambar tersebut ke Backend API.
+```
+ const PROMPT_EN = `
+  You are a professional CV analyst AI.
 
-Di sisi Backend, sistem menyematkan instruksi spesifik (hardcoded prompt) sebelum dikirim ke AI.
+  Task:
+  Analyze the given CV and return the result in a VALID JSON format.
 
-Contoh Prompt: "Anda adalah pakar agronomi. Analisis gambar tanaman ini, identifikasi hamanya, dan berikan solusi dalam format JSON."
+  IMPORTANT RULES:
+  - The response MUST be pure JSON
+  - DO NOT add any explanations
+  - DO NOT use markdown
+  - DO NOT add comments
+  - DO NOT wrap the JSON with backticks
+  ....
+  `;
+
+  const PROMPT_ID = `
+Kamu adalah AI analis CV profesional.
+
+Tugas:
+Analisa CV yang diberikan dan kembalikan hasil dalam format JSON yang VALID.
+
+ATURAN PENTING:
+- Jawaban HARUS berupa JSON murni
+- JANGAN menambahkan teks penjelasan apapun
+- JANGAN menggunakan markdown
+- JANGAN menambahkan komentar
+- JANGAN membungkus JSON dengan \`\`\`
+
+Gunakan struktur JSON berikut:
+
+{
+  "score": number,
+  "score_reason": string,
+  "skills": string[],
+  ....
+`;
+
+  const prompt = language === "en" ? PROMPT_EN : PROMPT_ID;
+
+  const response = await fetch(
+    `https://generativelanguage.googleapis.com/v1beta/models/gemini-3-flash-preview:generateContent?key=${process.env.GEMINI_API_KEY_CV_ANALYZER}`,
+    {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({
+        contents: [
+          {
+            parts: [
+              { text: prompt },
+              {
+                inline_data: {
+                  mime_type: file.type,
+                  data: base64File,
+                },
+              },
+            ],
+          },
+        ],
+      }),
+    }
+  );
+```
 
 AI menerima kombinasi gambar + prompt tersembunyi tersebut, sehingga hasil yang dikembalikan selalu konsisten dan sesuai dengan kategori yang dipilih.
+
+4. Respone yang diberikan oleh model AI akan berupa data json seperti ini yang kemudian di parsing di sisi frontend :
+
+```
+{
+  "score": 75,
+  "score_reason": "CV memiliki struktur yang rapi dan pengalaman spesifik di industri hospitality (Ayana Komodo). Namun, detail teknis untuk bidang IT masih bisa diperdalam lagi.",
+  "skills": [
+    "Troubleshooting Jaringan",
+    "Microsoft Office",
+    "Manajemen Infrastruktur IT Hotel"
+  ],
+  "recommendations": [
+    "IT Support (Hospitality)",
+    "Network Technician"
+  ],
+  "main_improvement": [
+    "Tambahkan rincian proyek spesifik atau software tertentu yang dikelola selama masa PKL di Ayana",
+    "Sertakan sertifikasi kompetensi (jika ada) untuk memperkuat profil lulusan TKJ",
+    "Gunakan layout yang lebih modern agar visual lebih menonjol di mata recruiter",
+    "Cantumkan hobi atau minat yang relevan dengan perkembangan teknologi terbaru"
+  ],
+  "job_keywords": [
+    "IT Support",
+    "Technical Support",
+    "Network Administrator",
+    "Helpdesk IT"
+  ]
+}
+```
 
 ---
 
@@ -97,7 +198,7 @@ AI menerima kombinasi gambar + prompt tersembunyi tersebut, sehingga hasil yang 
 | **TypeScript**   | Type safety                  |
 | **Tailwind CSS** | Styling                      |
 | **Vercel**       | Deployment                   |
-| **AI API**       | Image analysis engine        |
+| **Gemini API**   | Image analysis engine        |
 
 ---
 
@@ -105,54 +206,37 @@ AI menerima kombinasi gambar + prompt tersembunyi tersebut, sehingga hasil yang 
 
 Clone the repository:
 
-```bash
-git clone https://github.com/your-username/analyzer-app.git
-cd analyzer-app
+```
+git clone https://github.com/christianxavierVibecode/SustainAi_Analyzer_App.git
+cd SustainAi_Analyzer_App
 ```
 
-Install dependencies:
+Instal dependensi:
 
-```bash
+```
 npm install
 ```
 
-Run development server:
+Jalankan Development server (pastikan di komputer anda sudah terinstall Node.js) :
 
-```bash
+```
 npm run dev
 ```
-
-Build for production:
-
-```bash
-npm run build
-npm start
-```
-
----
-
-## 🌐 Deployment
-
-This project is deployed using **Vercel**.
-
-To deploy your own version:
-
-1. Push your project to GitHub
-2. Import the repository into Vercel
-3. Configure environment variables (if required)
-4. Deploy 🚀
 
 ---
 
 ## 🔐 Environment Variables
 
-If using an AI API provider, create a `.env.local` file:
+Buat file .env.local di direktori root (SustainAi_Analyzer_App), dengan struktur:
 
 ```
-AI_API_KEY=your_api_key_here
+GEMINI_API_KEY_CV_ANALYZER=YOUR_API_KEY
+GEMINI_API_KEY_WASTE_ANALYZER=YOUR_API_KEY
+GEMINI_API_KEY_PLANT_ANALYZER=YOUR_API_KEY
 ```
 
-Never expose your API key to the client side.
+> [!WARNING]
+> Jangan pernah push file `.env` ke repository. File ini mengandung API key dan kredensial sensitif yang bisa disalahgunakan.
 
 ---
 
