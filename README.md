@@ -1,4 +1,7 @@
-![Halaman Thumbnail](https://drive.google.com/uc?export=view&id=1N45Iu5HqLyxPTX518uwMcvUVoOwdjoEf)
+<img src="https://drive.google.com/uc?export=view&id=1N45Iu5HqLyxPTX518uwMcvUVoOwdjoEf" 
+     alt="Halaman Thumbnail" 
+     width="500" 
+     style="border: 5px solid #1AFF5F; border-radius: 10px;">
 
 # 🌿 Analyzer App – AI Image Analyzer
 
