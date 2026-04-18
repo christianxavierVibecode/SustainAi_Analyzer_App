@@ -86,18 +86,18 @@ Berikut adalah gambaran tampilan dari Analyzer App:
 
 5. Halaman Analisis Hama Tanaman (Plant Disease Detection)
 
-   <table style="width: 100%;">
-     <tr>
-       <td style="width: 50%; text-align: center;>
-         <img src="https://drive.google.com/uc?export=view&id=1ErznnHwod1oxFdmoqrSc6eTeR14eKN11">
-         <p><i>Halaman Plant Disease Detection - input</i></p>
-       </td>
-       <td style="width: 50%; text-align: center;>
-         <img src="https://drive.google.com/uc?export=view&id=115em_dVD9itSo-NEv86K7IO5eBglLQhm">
-         <p><i>Halaman Plant Disease Detection - output</i></p>
-       </td>
-     </tr>
-   </table>
+<table style="width: 100%;">
+  <tr>
+    <td style="width: 50%; text-align: center;">
+      <img src="https://drive.google.com/uc?export=view&id=1N45Iu5HqLyxPTX518uwMcvUVoOwdjoEf" alt="Thumbnail 1" style="border: 2px solid #ddd;">
+      <p><i>Keterangan Gambar 1</i></p>
+    </td>
+    <td style="width: 50%; text-align: center;">
+      <img src="https://drive.google.com/uc?export=view&id=1N45Iu5HqLyxPTX518uwMcvUVoOwdjoEf" alt="Thumbnail 2" style="border: 2px solid #ddd;">
+      <p><i>Keterangan Gambar 2</i></p>
+    </td>
+  </tr>
+</table>
 
 ---
 
