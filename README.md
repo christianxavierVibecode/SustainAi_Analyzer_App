@@ -146,7 +146,7 @@ try {
 🛠️ Teknik Prompt Engineering
 Aplikasi menggunakan metode Hardcoded Prompt Injection pada sisi server. Cara kerjanya:
 
-1. User memilih gambar (misal: Gambar Daun).
+1. User memilih gambar atau file pdf (misal: CV dalam bentuk PDF ).
 2. Frontend mengirimkan gambar tersebut ke Backend API.
 3. Di sisi Backend, sistem menyematkan instruksi spesifik (hardcoded prompt) sebelum dikirim ke AI, contoh kodenya :
 
@@ -319,7 +319,5 @@ This project is open-source and available under the MIT License.
 ## 👨‍💻 Author
 
 Built with passion for modern web technology and AI innovation.
-
-```
 
 ```
