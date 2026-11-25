@@ -1,10 +1,10 @@
 <table style="width: 100%;" border="0">
     <tr>
     <td style="width: 50%; text-align: center;">
-        <img src="https://drive.google.com/uc?export=view&id=1N45Iu5HqLyxPTX518uwMcvUVoOwdjoEf">
+        <img src="./DevReferences/Thumbnail.png" alt="Thumbnail 1">
     </td>
     <td style="width: 50%; text-align: center;">
-        <img src="https://drive.google.com/uc?export=view&id=1WHsLMK8YbaX8wtavRJ7oXZDNJ_U64vfY">
+        <img src="./DevReferences/Thumbnail2.png" alt="Thumbnail 2">
     </td>
     </tr>
 </table>
@@ -48,14 +48,14 @@ Berikut adalah gambaran tampilan dari Analyzer App:
 1. Bagian Utama (Hero Section)
    Menampilkan visual utama dan ajakan bertindak (call to action) bagi pengguna untuk memulai analisis.
 
-   ![Halaman Hero](https://drive.google.com/uc?export=view&id=1BlyD4DqK4tT5WYpxFJcgli6bMYtCA_2l)
+   ![Halaman Hero](./DevReferences/Hero%20Section%20-%20Dekstop.PNG)
 
 ---
 
 2. Visi Kami (Our Vision Section)
    Menjelaskan tujuan dibalik pembuatan aplikasi ini dalam membantu kehidupan sehari-hari melalui AI.
 
-   ![Halaman Our Vision](https://drive.google.com/uc?export=view&id=1MGXHQscQQoIBc2lfPvfia-zwYu58KclV)
+   ![Halaman Our Vision](./DevReferences/OurMission%20Section%20-%20Desktop.png)
 
 ---
 
@@ -63,7 +63,7 @@ Berikut adalah gambaran tampilan dari Analyzer App:
    Aplikasi ini memiliki tiga fitur utama yang dapat dipilih pengguna:
    📄 Analisis CV, 🌱 Hama Tanaman dan 🗑️ Klasifikasi Sampah
 
-   ![Halaman Kategori](https://drive.google.com/uc?export=view&id=1k7OfqVMzRMiZrogK4egvc84kT9K6FqbG)
+   ![Halaman Kategori](./DevReferences/OurSolution%20Section%20-%20Desktop.png)
 
 ---
 
@@ -72,11 +72,11 @@ Berikut adalah gambaran tampilan dari Analyzer App:
    <table style="width: 100%;">
      <tr>
        <td style="width: 50%; text-align: center;">
-         <img src="https://drive.google.com/uc?export=view&id=13e8fMu8-rY6BMhMpSn5CGZi9xCquO7_X">
+         <img src="./DevReferences/AI-Based CV Checker Input.png" alt="Halaman AI-Based CV Checker - input">
          <p><i>Halaman AI-Based CV Checker - input</i></p>
        </td>
        <td style="width: 50%; text-align: center;">
-         <img src="https://drive.google.com/uc?export=view&id=1nRShZCp0jfklJuryEIHhcp_xlvrKFStp">
+         <img src="./DevReferences/AI-Based CV Checker Output.png" alt="Halaman AI-Based CV Checker - output">
          <p><i>Halaman AI-Based CV Checker - output</i></p>
        </td>
      </tr>
@@ -89,11 +89,11 @@ Berikut adalah gambaran tampilan dari Analyzer App:
    <table style="width: 100%;">
      <tr>
        <td style="width: 50%; text-align: center;">
-         <img src="https://drive.google.com/uc?export=view&id=1ErznnHwod1oxFdmoqrSc6eTeR14eKN11">
+         <img src="./DevReferences/Plant Disease Detection - Input.png" alt="Halaman Plant Disease Detection - input">
          <p><i>Halaman Plant Disease Detection - input</i></p>
        </td>
        <td style="width: 50%; text-align: center;">
-         <img src="https://drive.google.com/uc?export=view&id=115em_dVD9itSo-NEv86K7IO5eBglLQhm">
+         <img src="./DevReferences/Plant Disease Detection - output.png" alt="Halaman Plant Disease Detection - output">
          <p><i>Halaman Plant Disease Detection - output</i></p>
        </td>
      </tr>
@@ -106,11 +106,11 @@ Berikut adalah gambaran tampilan dari Analyzer App:
    <table style="width: 100%;">
      <tr>
        <td style="width: 50%; text-align: center;">
-         <img src="https://drive.google.com/uc?export=view&id=13RqDYPta_3BLf-4AOllb0YyyB4EaXKmb">
+         <img src="./DevReferences/Waste Classification System - Input.png" alt="Halaman Waste Classification System - input">
          <p><i>Halaman Waste Classification System - input</i></p>
        </td>
        <td style="width: 50%; text-align: center;">
-         <img src="https://drive.google.com/uc?export=view&id=1D2iD5edZSz0HWHR6mFaP8lOq-iG2Tehm">
+         <img src="./DevReferences/Waste Classification System - output.png" alt="Halaman Waste Classification System - output">
          <p><i>Halaman Waste Classification System - output</i></p>
        </td>
      </tr>
